@@ -24,8 +24,14 @@ export default {
       white: "#FFFFFF",
       black: "#333333",
       transparent: "#00000000",
+      dark: "#212529",
     },
     extend: {
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
+      },
       fontSize: {
         xs: "0.75rem", // 12px
         sm: "0.875rem", // 14px
