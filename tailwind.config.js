@@ -20,6 +20,8 @@ export default {
       primary: "#003366",
       gray: {
         light: "#F5F5F5CC",
+        DEFAULT: "#CCCCCC",
+        dark: "#373737",
       },
       white: "#FFFFFF",
       black: "#333333",
