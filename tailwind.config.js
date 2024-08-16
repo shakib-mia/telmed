@@ -14,6 +14,7 @@ export default {
         md: "768px",
         lg: "1000px",
         xl: "1240px",
+        "2xl": "1280px",
       },
     },
     colors: {
