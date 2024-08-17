@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 body {
-  @apply text-gray-dark text-xs md:text-sm lg:text-lg;
+  @apply text-xs text-gray-dark md:text-sm lg:text-lg;
 }
 
 ::-webkit-scrollbar {
@@ -31,6 +31,10 @@ button {
   @apply rounded-full border border-primary bg-primary px-6 py-3 text-white transition hover:bg-transparent hover:text-primary;
 }
 
+button.btn-white {
+  @apply rounded-full border border-white bg-white px-6 py-3 text-primary transition hover:bg-transparent hover:text-white;
+}
+
 button.btn-outline {
   @apply rounded-full border border-primary bg-transparent px-6 py-3 text-primary transition hover:bg-primary hover:text-white;
 }
@@ -41,4 +45,23 @@ nav ul {
 
 #nav-check:checked + ul {
   @apply h-auto p-4;
+}
+
+.owl-nav {
+  @apply absolute -z-20 opacity-0;
+}
+/* 
+.owl-carousel {
+  @apply h-[140px];
+} */
+
+/* .owl-carousel .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+} */
+
+#partners .owl-item {
+  @apply h-[140px];
 }
