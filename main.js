@@ -1,6 +1,8 @@
 import Lenis from "lenis";
 // initializing aos
-AOS.init();
+AOS.init({
+  once: true,
+});
 
 // initializing lenis
 const lenis = new Lenis();
