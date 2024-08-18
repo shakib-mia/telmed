@@ -1,4 +1,4 @@
-# TelMed
+# TelMed - Telemedicine HTML Template with Vite and Tailwind CSS
 
 ## Description
 
