@@ -1,4 +1,58 @@
 import Lenis from "lenis";
+
+function createScrollDirectionTracker() {
+  let scrollDirection = "up";
+  let lastScrollY = 0;
+
+  function handleScroll() {
+    const currentScrollY = window.pageYOffset;
+    console.log(currentScrollY);
+    if (currentScrollY > lastScrollY) {
+      scrollDirection = "down";
+    } else {
+      scrollDirection = "up";
+    }
+
+    lastScrollY = currentScrollY;
+    // console.log(currentScrollY);
+    if (scrollDirection === "up") {
+      document.getElementById("navbar").style.top = "0";
+      document.getElementById("navbar").style.transition = "all 0.5s ease";
+      //   document
+      //     .getElementById("navbar")
+      //     .classList.add("shadow-[0_0_80px_0_#2B245D21]");
+    } else {
+      document.getElementById("navbar").style.top = "-12rem";
+      document.getElementById("navbar").style.transition = "all 0.5s ease";
+    }
+
+    if (currentScrollY > 0) {
+      document.getElementById("navbar").style.boxShadow =
+        "0 0 20px 0 #2B245D21";
+      document.getElementById("navbar").style.position = "fixed";
+      document.getElementById("navbar").style.backgroundColor = "white";
+    }
+    if (currentScrollY < 30) {
+      document.getElementById("navbar").style.boxShadow = "none";
+      // document.getElementById("navbar").style.position = "absolute";
+      document.getElementById("navbar").style.top = "3rem";
+      document.getElementById("navbar").style.backgroundColor = "transparent";
+    }
+  }
+  // console.log(scrollDirection);
+
+  window.addEventListener("scroll", handleScroll);
+
+  return {
+    getScrollDirection: () => scrollDirection,
+    cleanup: () => {
+      window.removeEventListener("scroll", handleScroll);
+    },
+  };
+}
+
+createScrollDirectionTracker();
+
 // initializing aos
 AOS.init({
   once: true,
