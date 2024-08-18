@@ -6,7 +6,9 @@ function createScrollDirectionTracker() {
 
   function handleScroll() {
     const currentScrollY = window.pageYOffset;
-    console.log(currentScrollY);
+
+    // console.log();
+
     if (currentScrollY > lastScrollY) {
       scrollDirection = "down";
     } else {
@@ -14,29 +16,36 @@ function createScrollDirectionTracker() {
     }
 
     lastScrollY = currentScrollY;
-    // console.log(currentScrollY);
-    if (scrollDirection === "up") {
-      document.getElementById("navbar").style.top = "0";
+
+    if (scrollDirection === "down") {
+      document.getElementById("navbar").style.top = "-10rem";
+
       document.getElementById("navbar").style.transition = "all 0.5s ease";
+
       //   document
       //     .getElementById("navbar")
       //     .classList.add("shadow-[0_0_80px_0_#2B245D21]");
     } else {
-      document.getElementById("navbar").style.top = "-12rem";
-      document.getElementById("navbar").style.transition = "all 0.5s ease";
+      if (currentScrollY > document.getElementById("social").clientHeight) {
+        // console.log(true);
+        document.getElementById("navbar").style.top = 0;
+      } else {
+        document.getElementById("navbar").style.top =
+          document.getElementById("social").clientHeight + "px";
+        document.getElementById("navbar").style.transition = "all 0.5s ease";
+      }
     }
 
     if (currentScrollY > 0) {
       document.getElementById("navbar").style.boxShadow =
         "0 0 20px 0 #2B245D21";
       document.getElementById("navbar").style.position = "fixed";
-      document.getElementById("navbar").style.backgroundColor = "white";
-    }
-    if (currentScrollY < 30) {
+      document.getElementById("navbar").style.backgroundColor = "#FFF";
+    } else {
       document.getElementById("navbar").style.boxShadow = "none";
       // document.getElementById("navbar").style.position = "absolute";
       document.getElementById("navbar").style.top = "3rem";
-      document.getElementById("navbar").style.backgroundColor = "transparent";
+      document.getElementById("navbar").style.backgroundColor = "#FFF0";
     }
   }
   // console.log(scrollDirection);
