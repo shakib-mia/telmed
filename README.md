@@ -1,8 +1,8 @@
-# TelMed - Telemedicine HTML Template with Vite and Tailwind CSS
+# TelMed
 
 ## Description
 
-**TelMed HTML Template with Vite and Tailwind CSS**
+**TelMed - Telemedicine HTML Template with Vite and Tailwind CSS**
 
 TelMed is your gateway to extraordinary travel experiences, designed to create unforgettable memories as you explore the wonders of the world. Built with Vite and Tailwind CSS, TelMed ensures optimal performance and an immersive user experience, catering to travelers seeking customized, seamless, and stress-free holidays.
 
