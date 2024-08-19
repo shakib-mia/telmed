@@ -44,7 +44,8 @@ function createScrollDirectionTracker() {
     } else {
       document.getElementById("navbar").style.boxShadow = "none";
       // document.getElementById("navbar").style.position = "absolute";
-      document.getElementById("navbar").style.top = "3rem";
+      document.getElementById("navbar").style.top =
+        document.getElementById("social").clientHeight + "px";
       document.getElementById("navbar").style.backgroundColor = "#FFF0";
     }
   }
@@ -112,3 +113,6 @@ $(document).ready(function () {
   $("#slider-prev").click(() => $(".owl-prev")[0].click());
   $("#slider-next").click(() => $(".owl-next")[0].click());
 });
+
+document.getElementById("navbar").style.top =
+  document.getElementById("social").clientHeight + "px";
