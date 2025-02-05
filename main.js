@@ -85,7 +85,7 @@ requestAnimationFrame(raf);
 // Initializing owl-carousel with JQuery
 $(document).ready(function () {
   // Initializing Owl Carousel
-  $("#testimonials .owl-carousel").owlCarousel({
+  $("#testimonial .owl-carousel").owlCarousel({
     items: 1,
     loop: true,
     autoplay: true,
@@ -96,7 +96,23 @@ $(document).ready(function () {
   $("#partners .owl-carousel").owlCarousel({
     // items: 5,
     loop: true,
-    autoplay: true,
+    autoplay: false,
+    margin: 96,
+    dots: false,
+    nav: true,
+    center: true,
+    autoplayTimeout: 2000,
+    responsive: {
+      0: { items: 2 },
+      768: { items: 3 },
+      1024: { items: 5 },
+    },
+  });
+
+  $("#partners-logo .owl-carousel").owlCarousel({
+    items: 5,
+    loop: true,
+    autoplay: false,
     margin: 96,
     dots: false,
     nav: true,
@@ -116,3 +132,5 @@ $(document).ready(function () {
 
 document.getElementById("navbar").style.top =
   document.getElementById("social").clientHeight + "px";
+
+document.getElementById("year").innerText = new Date().getFullYear();

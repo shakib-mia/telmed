@@ -47,10 +47,19 @@
           </div>
 
           <div class="flex items-center gap-4">
-            <i class="fa-brands fa-dribbble text-lg"></i>
-            <i class="fa-brands fa-facebook text-lg"></i>
-            <i class="fa-brands fa-instagram text-lg"></i>
-            <i class="fa-brands fa-twitter text-lg"></i>
+            <a href="https://dribbble.com/raddito">
+              <i class="fa-brands fa-dribbble text-lg"></i>
+            </a>
+            <a href="https://www.facebook.com/RadditoLLC/">
+              <i class="fa-brands fa-facebook text-lg"></i>
+            </a>
+            <a href="https://www.instagram.com/radditollc">
+              <i class="fa-brands fa-instagram text-lg"></i>
+            </a>
+
+            <a href="https://x.com/RadditoLLC"
+              ><i class="fa-brands fa-twitter text-lg"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -86,7 +95,7 @@
             <!-- Nav item -->
             <li>
               <a
-                href="#"
+                href="#about"
                 class="underline-offset-8 hover:text-primary hover:underline"
               >
                 About Us
@@ -96,7 +105,7 @@
             <!-- Nav item -->
             <li>
               <a
-                href="#"
+                href="#services"
                 class="underline-offset-8 hover:text-primary hover:underline"
               >
                 Services
@@ -106,7 +115,7 @@
             <!-- Nav item -->
             <li>
               <a
-                href="#"
+                href="#appointments"
                 class="underline-offset-8 hover:text-primary hover:underline"
               >
                 Appointment
@@ -116,10 +125,10 @@
             <!-- Nav item -->
             <li>
               <a
-                href="#"
+                href="#testimonials"
                 class="underline-offset-8 hover:text-primary hover:underline"
               >
-                Blog
+                Testimonials
               </a>
             </li>
 
@@ -135,8 +144,8 @@
           </ul>
 
           <div class="hidden gap-2 lg:flex">
-            <button class="btn-outline">Sign up</button>
-            <button>Log in</button>
+            <a href="#" class="button btn-outline">Sign up</a>
+            <a href="#" class="button">Log in</a>
           </div>
         </nav>
       </div>
@@ -178,22 +187,25 @@
             <!-- Action Buttons: Buttons for booking an appointment or learning more -->
             <div class="flex gap-2">
               <!-- Book Appointment Button -->
-              <button
+              <a
+                href="#"
+                class="button"
                 data-aos="fade-right"
                 data-aos-duration="1000"
                 data-aos-delay="200"
               >
                 Book Appointment
-              </button>
+              </a>
               <!-- Learn More Button -->
-              <button
-                class="btn-outline"
+              <a
+                href="#"
+                class="button btn-outline"
                 data-aos="fade-right"
                 data-aos-duration="1000"
                 data-aos-delay="150"
               >
                 Learn More
-              </button>
+              </a>
             </div>
           </aside>
 
@@ -230,7 +242,10 @@
       </header>
 
       <!-- Services Section -->
-      <section style="background-image: url(./assets/services-bg.jpeg)">
+      <section
+        style="background-image: url(./assets/services-bg.jpeg)"
+        id="services"
+      >
         <div class="bg-gray-light py-16 lg:py-32">
           <div class="container">
             <!-- Section Header -->
@@ -497,6 +512,7 @@
 
       <div
         class="container flex flex-col items-center gap-14 py-16 lg:flex-row lg:gap-0 lg:py-32"
+        id="about"
       >
         <div class="w-full lg:w-7/12 lg:pr-14">
           <!-- Process Section Image -->
@@ -925,7 +941,7 @@
 
       <!-- Testimonial Section -->
 
-      <section class="bg-gray-light py-16 lg:py-32">
+      <section class="bg-gray-light py-16 lg:py-32" id="testimonials">
         <!-- Testimonial Section Heading -->
         <h2
           class="container mb-8 text-left font-montserrat font-semibold lg:text-center"
@@ -936,7 +952,7 @@
 
         <div
           class="container grid grid-cols-1 items-center gap-5 lg:grid-cols-2 lg:gap-10"
-          id="testimonials"
+          id="testimonial"
         >
           <!-- Testimonial Section Image -->
           <img
@@ -1048,52 +1064,54 @@
 
         <!-- Partners Section -->
 
-        <div
-          id="partners"
-          class="container mt-7"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <div class="owl-carousel">
-            <!-- Partner Image -->
-            <div class="flex h-full items-center">
-              <img
-                src="./assets/partners/logo-ADMF-background-putih 1.png"
-                alt="partner"
-                class="h-fit"
-              />
-            </div>
-            <!-- Partner Image -->
-            <div class="flex h-full items-center">
-              <img
-                src="./assets/partners/logo__1626691788 1.png"
-                alt="partner"
-                class="h-fit"
-              />
-            </div>
-            <!-- Partner Image -->
-            <div class="flex h-full items-center">
-              <img
-                src="./assets/partners/1280px-Holcim_logo 1.png"
-                alt="partner"
-                class="h-fit"
-              />
-            </div>
-            <!-- Partner Image -->
-            <div class="flex h-full items-center">
-              <img
-                src="./assets/partners/logo-mnc 1.png"
-                alt="partner"
-                class="h-fit"
-              />
-            </div>
-            <!-- Partner Image -->
-            <div class="flex h-full items-center">
-              <img
-                src="./assets/partners/Logo Telkomsel Terbaru 1.png"
-                alt="partner"
-                class="h-fit"
-              />
+        <div class="container">
+          <div
+            id="partners-logo"
+            class="mt-7"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="owl-carousel">
+              <!-- Partner Image -->
+              <div class="flex h-full items-center">
+                <img
+                  src="./assets/partners/logo-ADMF-background-putih 1.png"
+                  alt="partner"
+                  class="h-fit"
+                />
+              </div>
+              <!-- Partner Image -->
+              <div class="flex h-full items-center">
+                <img
+                  src="./assets/partners/logo__1626691788 1.png"
+                  alt="partner"
+                  class="h-fit"
+                />
+              </div>
+              <!-- Partner Image -->
+              <div class="flex h-full items-center">
+                <img
+                  src="./assets/partners/1280px-Holcim_logo 1.png"
+                  alt="partner"
+                  class="h-fit"
+                />
+              </div>
+              <!-- Partner Image -->
+              <div class="flex h-full items-center">
+                <img
+                  src="./assets/partners/logo-mnc 1.png"
+                  alt="partner"
+                  class="h-fit"
+                />
+              </div>
+              <!-- Partner Image -->
+              <div class="flex h-full items-center">
+                <img
+                  src="./assets/partners/Logo Telkomsel Terbaru 1.png"
+                  alt="partner"
+                  class="h-fit"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -1102,6 +1120,7 @@
       <!-- Experience Section -->
       <section
         class="container relative mb-7 mt-24 rounded-lg bg-primary py-10 lg:py-20"
+        id="appointments"
       >
         <img
           src="./assets/experience.png"
@@ -1112,14 +1131,14 @@
         />
         <div class="mx-auto text-center lg:w-1/2">
           <h2
-            class="mb-6 font-semibold leading-[2.75rem] text-white"
+            class="mb-6 font-semibold leading-[1.25] text-white"
             data-aos="fade-right"
             data-aos-duration="1000"
           >
             Experience the future of healthcare today
           </h2>
           <div data-aos="fade-right" data-aos-duration="1000">
-            <button class="btn-white">Book Appointment</button>
+            <a href="#" class="button btn-white">Book Appointment</a>
           </div>
         </div>
       </section>
@@ -1138,31 +1157,31 @@
 
             <div class="my-4 flex gap-2">
               <a
-                href="#"
-                class="flex h-11 w-11 items-center justify-center rounded-full text-xl text-primary shadow-xl transition hover:bg-primary hover:text-white"
-              >
-                <i class="fa fa-slack"></i>
-              </a>
-
-              <a
-                href="#"
+                href="https://www.facebook.com/RadditoLLC"
                 class="flex h-11 w-11 items-center justify-center rounded-full text-xl text-primary shadow-xl transition hover:bg-primary hover:text-white"
               >
                 <i class="fab fa-facebook"></i>
               </a>
 
               <a
-                href="#"
+                href="https://www.instagram.com/radditollc"
                 class="flex h-11 w-11 items-center justify-center rounded-full text-xl text-primary shadow-xl transition hover:bg-primary hover:text-white"
               >
                 <i class="fa fa-instagram"></i>
               </a>
 
               <a
-                href="#"
+                href="https://www.linkedin.com/company/radditollc/"
                 class="flex h-11 w-11 items-center justify-center rounded-full text-xl text-primary shadow-xl transition hover:bg-primary hover:text-white"
               >
                 <i class="fa fa-linkedin"></i>
+              </a>
+
+              <a
+                href="https://www.youtube.com/@RadditoLLC"
+                class="flex h-11 w-11 items-center justify-center rounded-full text-xl text-primary shadow-xl transition hover:bg-primary hover:text-white"
+              >
+                <i class="fa fa-youtube"></i>
               </a>
             </div>
           </aside>
@@ -1199,21 +1218,35 @@
               <ul class="mt-4 flex flex-col gap-3 lg:mt-6 lg:gap-6">
                 <li class="flex items-center gap-2">
                   <i class="far fa-check-circle text-primary"></i>
-                  <a class="transition hover:text-primary" href="#">Facebook</a>
+                  <a
+                    class="transition hover:text-primary"
+                    href="https://www.facebook.com/RadditoLLC"
+                    >Facebook</a
+                  >
                 </li>
                 <li class="flex items-center gap-2">
                   <i class="far fa-check-circle text-primary"></i>
-                  <a class="transition hover:text-primary" href="#"
+                  <a
+                    class="transition hover:text-primary"
+                    href="https://www.instagram.com/radditollc"
                     >Instagram</a
                   >
                 </li>
                 <li class="flex items-center gap-2">
                   <i class="far fa-check-circle text-primary"></i>
-                  <a class="transition hover:text-primary" href="#">LinkedIn</a>
+                  <a
+                    class="transition hover:text-primary"
+                    href="https://www.linkedin.com/company/radditollc/"
+                    >LinkedIn</a
+                  >
                 </li>
                 <li class="flex items-center gap-2">
                   <i class="far fa-check-circle text-primary"></i>
-                  <a class="transition hover:text-primary" href="#">Youtube</a>
+                  <a
+                    class="transition hover:text-primary"
+                    href="https://www.youtube.com/@RadditoLLC"
+                    >Youtube</a
+                  >
                 </li>
               </ul>
             </aside>
@@ -1253,15 +1286,15 @@
             <div class="mt-6 flex items-center gap-2">
               <i class="fa fa-phone rotate-90 text-primary"></i>
               <a
-                href="callto:+833-900-8338"
+                href="callto:+123-456-7890"
                 class="transition hover:text-primary"
-                >+833-900-8338</a
+                >+123-456-7890</a
               >
             </div>
             <div class="mt-3 flex items-center gap-2">
               <i class="far fa-envelope text-primary"></i>
               <a
-                href="callto:+833-900-8338"
+                href="mailto:support@raddito.com"
                 class="transition hover:text-primary"
                 >support@raddito.com</a
               >
@@ -1270,8 +1303,8 @@
             <div class="mt-3 flex gap-2">
               <i class="fa-solid fa-location-dot mt-1 text-primary"></i>
               <p class="transition hover:text-primary">
-                818 22nd Ave NW Saint Paul, <br />
-                MN 55112-6629 USA
+                Saint Paul, MN <br />
+                55112-6629 USA
               </p>
             </div>
           </aside>
@@ -1281,7 +1314,7 @@
           class="container flex flex-col-reverse justify-between gap-2 pt-7 text-center font-montserrat lg:flex-row lg:text-left"
         >
           <aside>
-            Copyright © 2024 Design & Developed by
+            Copyright ©<span id="year"></span> Design & Developed by
             <a
               href="https://raddito.net/"
               target="_blank"

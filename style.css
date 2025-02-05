@@ -27,15 +27,18 @@ h4 {
   @apply text-sm md:text-base lg:text-lg xl:text-xl;
 }
 
-button {
+button,
+.button {
   @apply rounded-full border border-primary bg-primary px-6 py-3 text-white transition hover:bg-transparent hover:text-primary;
 }
 
-button.btn-white {
+button.btn-white,
+.button.btn-white {
   @apply rounded-full border border-white bg-white px-6 py-3 text-primary transition hover:bg-transparent hover:text-white;
 }
 
-button.btn-outline {
+button.btn-outline,
+.button.btn-outline {
   @apply rounded-full border border-primary bg-transparent px-6 py-3 text-primary transition hover:bg-primary hover:text-white;
 }
 
@@ -62,6 +65,10 @@ nav ul {
   height: 100%;
 } */
 
-#partners .owl-item {
-  @apply h-[140px];
+#partners-logo .owl-item {
+  @apply !h-[140px];
+}
+
+#partners-logo .owl-stage {
+  @apply flex items-center;
 }
